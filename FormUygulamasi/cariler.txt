@@ -1,0 +1,6 @@
+Onur;Aydınoğlu;0555034031;Oni;1806;Yazılım;Samsun;Atakum;Atakum/Samsun
+Nisa Nur;Işık;0555031034;Oni;1806;Yazılım;Samsun;Atakum;Atakum/Samsun
+Ayaz;Yıldız;05467891452;Yıldız;1230;Otomobil;İstanbul;Başakşehir;Başakşehir/İstanbul
+Karsu;Yılmaz;03124567894;Kar;7894;Mobilya;Hatay;Dörtyol;Dörtyol/Hatay
+Aslı;Kara;05412364579;Kara;1425;Eğitim;İstanbul;Kurtköy;Kurtköy/İstanbul
+Adem;Aydın;05487956458;Aydın;1543;Ayakkabı;İstanbul;Esenler;Esenler/İstanbul
