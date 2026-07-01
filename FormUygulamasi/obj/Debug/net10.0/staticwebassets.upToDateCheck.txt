@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,7 +61,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
+C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\css\site.css
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\favicon.ico
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\js\site.js
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -122,4 +123,3 @@ C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroo
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\wwwroot\css\site.css

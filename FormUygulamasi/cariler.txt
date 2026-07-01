@@ -4,3 +4,4 @@ Ayaz;Yıldız;05467891452;Yıldız;1230;Otomobil;İstanbul;Başakşehir;Başakş
 Karsu;Yılmaz;03124567894;Kar;7894;Mobilya;Hatay;Dörtyol;Dörtyol/Hatay
 Aslı;Kara;05412364579;Kara;1425;Eğitim;İstanbul;Kurtköy;Kurtköy/İstanbul
 Adem;Aydın;05487956458;Aydın;1543;Ayakkabı;İstanbul;Esenler;Esenler/İstanbul
+aa;aa;021545120;aa;1249;aa;İstanbul;Atakum;

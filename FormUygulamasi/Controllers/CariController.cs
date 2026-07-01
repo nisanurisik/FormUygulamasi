@@ -13,6 +13,11 @@ namespace FormUygulamasi.Controllers
         [HttpPost]
         public IActionResult Kaydet(Cari cari)
         {
+            if(ModelState.IsValid == false)
+            {
+                return View("CariFormu", cari);
+            }
+
             string dosyaYolu = Path.Combine(
                 Directory.GetCurrentDirectory(),
                 "cariler.txt");

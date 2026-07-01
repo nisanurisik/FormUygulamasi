@@ -96,3 +96,4 @@ C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\obj\De
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\obj\Debug\net10.0\FormUygulamasi.genruntimeconfig.cache
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\obj\Debug\net10.0\ref\FormUygulamasi.dll
 C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\obj\Debug\net10.0\compressed\b21d4wnta7-{0}-182ty29ly9-182ty29ly9.gz
+C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\obj\Debug\net10.0\FormUygulamasi.sourcelink.json
