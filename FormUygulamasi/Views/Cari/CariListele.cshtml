@@ -1,0 +1,38 @@
+﻿@model List<FormUygulamasi.Models.Cari>
+
+<h2>Cari Listesi</h2>
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+        <tr>
+            <th>Cari Adı</th>
+            <th>Cari Soyadı</th>
+            <th>Telefon</th>
+            <th>Firma</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var cari in Model)
+        {
+            <tr>
+                <td>@cari.CariAdi</td>
+                <td>@cari.CariSoyadi</td>
+                <td>@cari.Telefon</td>
+                <td>@cari.FirmaAdi</td>
+                <td>
+                    <a asp-controller="Cari"
+                       asp-action="CariGuncelle"
+                       asp-route-id="@cari.Id"
+                       class="btn btn-warning">
+                        Güncelle
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

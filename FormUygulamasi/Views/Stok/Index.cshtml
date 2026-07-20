@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Stoklar";
+}
+
+<h1 class="text-center form-title mb-3">
+    Stok İşlemleri
+</h1>
+
+<div class="form-divider mx-auto mb-4"></div>
+<div class="row justify-content-center">
+    <div class="col-md-4 mb-3">
+        <div class="card shadow text-center h-100">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-box-seam display-4 text-primary"></i>
+                <h4 class="mt-3">Stok Oluştur</h4>
+                <p class="text-muted">
+                    Yeni stok kartı oluşturabilirsiniz.
+                </p>
+
+                <a asp-controller="Stok"
+                   asp-action="StokFormu"
+                   class="btn btn-primary mt-2">
+                    Git
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card shadow text-center h-100">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-card-list display-4 text-success"></i>
+                <h4 class="mt-3">Stok Listele</h4>
+                <p class="text-muted">
+                    Kayıtlı stokları görüntüleyebilirsiniz.
+                </p>
+
+                <a asp-controller="Stok"
+                   asp-action="StokListele"
+                   class="btn btn-success mt-2">
+                    Git
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card shadow text-center h-100">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-pencil-square display-4 text-warning"></i>
+                <h4 class="mt-3">Stok Güncelle</h4>
+                <p class="text-muted">
+                    Kayıtlı stok bilgilerini güncelleyebilirsiniz.
+                </p>
+
+                <a asp-controller="Stok"
+                   asp-action="StokListele"
+                   class="btn btn-warning mt-2">
+                    Git
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</div>

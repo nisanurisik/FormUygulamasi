@@ -1,20 +1,29 @@
 is_global = true
 build_property.TargetFramework = net10.0
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
 build_property.RootNamespace = FormUygulamasi
 build_property.RootNamespace = FormUygulamasi
 build_property.ProjectDir = C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 9.0
+build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\nisanur\Desktop\Yazılım Dersleri\FormUygulamasi\FormUygulamasi
@@ -24,6 +33,18 @@ build_property.EnableCodeStyleSeverity =
 
 [C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Cari/CariFormu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyaVxDYXJpRm9ybXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Cari/CariGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyaVxDYXJpR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Cari/CariListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyaVxDYXJpTGlzdGVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Cari/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Home/Index.cshtml]
@@ -40,6 +61,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Stok/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rva1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Stok/StokFormu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rva1xTdG9rRm9ybXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Stok/StokGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rva1xTdG9rR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/Stok/StokListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rva1xTdG9rTGlzdGVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nisanur/Desktop/Yazılım Dersleri/FormUygulamasi/FormUygulamasi/Views/_ViewImports.cshtml]

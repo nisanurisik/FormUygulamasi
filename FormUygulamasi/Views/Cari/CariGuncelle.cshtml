@@ -1,0 +1,151 @@
+﻿@model FormUygulamasi.Models.Cari
+
+@{
+    ViewData["Title"] = "Cari Güncelle";
+}
+
+<h1 class="text-center form-title mb-3">Cari Güncelle</h1>
+<div class="form-divider mx-auto mb-4"></div>
+
+<div class="card shadow mx-auto" style="max-width: 950px;">
+    <div class="card-body px-5">
+
+        <form asp-controller="Cari" asp-action="CariGuncelle" method="post">
+
+            <input asp-for="Id" type="hidden" />
+
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="CariAdi" class="form-label">Cari Adı</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input asp-for="CariAdi" class="form-control" placeholder="Cari adını giriniz." />
+                        </div>
+                        <span asp-validation-for="CariAdi" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="CariSoyadi" class="form-label">Cari Soyadı</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-badge"></i>
+                            </span>
+                            <input asp-for="CariSoyadi" class="form-control" placeholder="Cari soyadını giriniz." />
+                        </div>
+                        <span asp-validation-for="CariSoyadi" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Telefon" class="form-label">Cari Telefon Numarası</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-telephone"></i>
+                    </span>
+                    <input asp-for="Telefon" class="form-control" placeholder="(555) 555 55 55" />
+                </div>
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="FirmaAdi" class="form-label">Firma Adı</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-building"></i>
+                            </span>
+                            <input asp-for="FirmaAdi" class="form-control" placeholder="Firma adını giriniz." />
+                        </div>
+                        <span asp-validation-for="FirmaAdi" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="FirmaVKN" class="form-label">Firma VKN</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-card-text"></i>
+                            </span>
+                            <input asp-for="FirmaVKN" class="form-control" placeholder="Firma VKN giriniz." />
+                        </div>
+                        <span asp-validation-for="FirmaVKN" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Kategori" class="form-label">Kategori</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-tags"></i>
+                    </span>
+                    <input asp-for="Kategori" class="form-control" placeholder="Kategori giriniz." />
+                </div>
+                <span asp-validation-for="Kategori" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="Il" class="form-label">İl</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-geo-alt"></i>
+                            </span>
+
+                            <select asp-for="Il" class="form-select">
+                                <option value="">İl Seçiniz</option>
+                                <option>Samsun</option>
+                                <option>İstanbul</option>
+                                <option>Hatay</option>
+                            </select>
+
+                        </div>
+                        <span asp-validation-for="Il" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="Ilce" class="form-label">İlçe</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-pin-map"></i>
+                            </span>
+                            <input asp-for="Ilce" class="form-control" placeholder="İlçe giriniz." />
+                        </div>
+                        <span asp-validation-for="Ilce" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Adres" class="form-label">Adres</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-map"></i>
+                    </span>
+                    <textarea asp-for="Adres" class="form-control" rows="3" placeholder="Adres giriniz."></textarea>
+                </div>
+                <span asp-validation-for="Adres" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid gap-2 mb-3">
+                <button type="submit" class="btn btn-warning">
+                    Güncelle
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

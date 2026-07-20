@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\views\\cari\\cariformu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\views\\cari\\cariformu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\views\\stok\\stoklistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\views\\stok\\stoklistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\controllers\\caricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\controllers\\caricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\views\\stok\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\views\\stok\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\cariler.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\cariler.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\views\\cari\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\views\\cari\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\models\\cari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\models\\cari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\views\\cari\\carilistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\views\\cari\\carilistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "cariler.txt",
-              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\cariler.txt",
-              "RelativeDocumentMoniker": "FormUygulamasi\\cariler.txt",
-              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\cariler.txt",
-              "RelativeToolTip": "FormUygulamasi\\cariler.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-07-01T10:45:00.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cari.cs",
-              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Models\\Cari.cs",
-              "RelativeDocumentMoniker": "FormUygulamasi\\Models\\Cari.cs",
-              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Models\\Cari.cs",
-              "RelativeToolTip": "FormUygulamasi\\Models\\Cari.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T10:41:27.969Z",
+              "DocumentIndex": 0,
+              "Title": "StokListele.cshtml",
+              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Stok\\StokListele.cshtml",
+              "RelativeDocumentMoniker": "FormUygulamasi\\Views\\Stok\\StokListele.cshtml",
+              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Stok\\StokListele.cshtml",
+              "RelativeToolTip": "FormUygulamasi\\Views\\Stok\\StokListele.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T10:30:41.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CariController.cs",
-              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Controllers\\CariController.cs",
-              "RelativeDocumentMoniker": "FormUygulamasi\\Controllers\\CariController.cs",
-              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Controllers\\CariController.cs",
-              "RelativeToolTip": "FormUygulamasi\\Controllers\\CariController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T08:09:42.877Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Stok\\Index.cshtml",
+              "RelativeDocumentMoniker": "FormUygulamasi\\Views\\Stok\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Stok\\Index.cshtml",
+              "RelativeToolTip": "FormUygulamasi\\Views\\Stok\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T10:28:52.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CariFormu.cshtml",
-              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\CariFormu.cshtml",
-              "RelativeDocumentMoniker": "FormUygulamasi\\Views\\Cari\\CariFormu.cshtml",
-              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\CariFormu.cshtml",
-              "RelativeToolTip": "FormUygulamasi\\Views\\Cari\\CariFormu.cshtml",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIoAAABLAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\Index.cshtml",
+              "RelativeDocumentMoniker": "FormUygulamasi\\Views\\Cari\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\Index.cshtml",
+              "RelativeToolTip": "FormUygulamasi\\Views\\Cari\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-26T08:05:28.807Z",
+              "WhenOpened": "2026-07-20T10:27:58.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CariListele.cshtml",
+              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\CariListele.cshtml",
+              "RelativeDocumentMoniker": "FormUygulamasi\\Views\\Cari\\CariListele.cshtml",
+              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\CariListele.cshtml",
+              "RelativeToolTip": "FormUygulamasi\\Views\\Cari\\CariListele.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T10:27:12.523Z",
               "EditorCaption": ""
             }
           ]

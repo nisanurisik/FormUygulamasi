@@ -1,0 +1,64 @@
+﻿@model List<FormUygulamasi.Models.Stok>
+
+@{
+    ViewData["Title"] = "Stok Listesi";
+}
+
+<h1 class="text-center form-title mb-3">Stok Listesi</h1>
+<div class="form-divider mx-auto mb-4"></div>
+
+<div class="card shadow">
+    <div class="card-body">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Stok Kodu</th>
+                    <th>Stok Adı</th>
+                    <th>Barkod</th>
+                    <th>Birim</th>
+                    <th>Adet</th>
+                    <th>Alış Fiyatı</th>
+                    <th>Satış Fiyatı</th>
+                    <th>KDV (%)</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @if (Model.Count == 0)
+                {
+                    <tr>
+                        <td colspan="9" class="text-center text-muted">
+                            Kayıtlı stok bulunamadı.
+                        </td>
+                    </tr>
+                }
+
+                @foreach (var stok in Model)
+                {
+                    <tr>
+                        <td>@stok.StokKodu</td>
+                        <td>@stok.StokAdi</td>
+                        <td>@stok.Barkod</td>
+                        <td>@stok.BirimAdi</td>
+                        <td>@stok.Adet</td>
+                        <td>@stok.AlisFiyati.ToString("C")</td>
+                        <td>@stok.SatisFiyati.ToString("C")</td>
+                        <td>%@stok.KdvOrani</td>
+                        <td>
+                            <a asp-controller="Stok"
+                               asp-action="StokGuncelle"
+                               asp-route-id="@stok.StokKodu"
+                               class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-square"></i>
+                                Güncelle
+
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
