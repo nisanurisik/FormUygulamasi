@@ -8,6 +8,7 @@ namespace FormUygulamasi.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
+
         public DbSet<Cari> Cariler { get; set; }
         public DbSet<Stok> Stoklar { get; set; }
     }

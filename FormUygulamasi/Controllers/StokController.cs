@@ -1,5 +1,6 @@
 ﻿using FormUygulamasi.Data;
 using FormUygulamasi.Models;
+using FormUygulamasi.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FormUygulamasi.Controllers
@@ -26,14 +27,26 @@ namespace FormUygulamasi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Kaydet(Stok stok)
+        public IActionResult Kaydet(StokViewModel stok)
         {
             if (!ModelState.IsValid)
             {
                 return View("StokFormu", stok);
             }
 
-            _context.Stoklar.Add(stok);
+            var yeniStok = new Stok
+            {
+                StokKodu = stok.StokKodu,
+                StokAdi = stok.StokAdi,
+                Barkod = stok.Barkod,
+                BirimAdi = stok.BirimAdi,
+                Adet = stok.Adet,
+                AlisFiyati = stok.AlisFiyati,
+                SatisFiyati = stok.SatisFiyati,
+                KdvOrani = stok.KdvOrani
+            };
+
+            _context.Stoklar.Add(yeniStok);
             _context.SaveChanges();
 
             return RedirectToAction("StokFormu");
@@ -42,7 +55,19 @@ namespace FormUygulamasi.Controllers
         [HttpGet]
         public IActionResult StokListele()
         {
-            var stoklar = _context.Stoklar.ToList();
+            var stoklar = _context.Stoklar
+                .Select(x => new StokViewModel
+                {
+                    StokKodu = x.StokKodu,
+                    StokAdi = x.StokAdi,
+                    Barkod = x.Barkod,
+                    BirimAdi = x.BirimAdi,
+                    Adet = x.Adet,
+                    AlisFiyati = x.AlisFiyati,
+                    SatisFiyati = x.SatisFiyati,
+                    KdvOrani = x.KdvOrani
+                })
+                .ToList();
 
             return View(stoklar);
         }
@@ -57,18 +82,45 @@ namespace FormUygulamasi.Controllers
                 return NotFound();
             }
 
-            return View(stok);
+            var model = new StokViewModel
+            {
+                StokKodu = stok.StokKodu,
+                StokAdi = stok.StokAdi,
+                Barkod = stok.Barkod,
+                BirimAdi = stok.BirimAdi,
+                Adet = stok.Adet,
+                AlisFiyati = stok.AlisFiyati,
+                SatisFiyati = stok.SatisFiyati,
+                KdvOrani = stok.KdvOrani
+            };
+
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult StokGuncelle(Stok stok)
+        public IActionResult StokGuncelle(StokViewModel stok)
         {
             if (!ModelState.IsValid)
             {
                 return View(stok);
             }
 
-            _context.Stoklar.Update(stok);
+            var guncellenecekStok = _context.Stoklar
+                .FirstOrDefault(x => x.StokKodu == stok.StokKodu);
+
+            if (guncellenecekStok == null)
+            {
+                return NotFound();
+            }
+
+            guncellenecekStok.StokAdi = stok.StokAdi;
+            guncellenecekStok.Barkod = stok.Barkod;
+            guncellenecekStok.BirimAdi = stok.BirimAdi;
+            guncellenecekStok.Adet = stok.Adet;
+            guncellenecekStok.AlisFiyati = stok.AlisFiyati;
+            guncellenecekStok.SatisFiyati = stok.SatisFiyati;
+            guncellenecekStok.KdvOrani = stok.KdvOrani;
+
             _context.SaveChanges();
 
             return RedirectToAction("StokListele");

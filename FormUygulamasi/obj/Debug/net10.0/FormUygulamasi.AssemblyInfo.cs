@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormUygulamasi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36614f4593a8daf50412e7b30833c6386377fe65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52aac84f53ce2ce6208da28d962d0cfbfeaaa9ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormUygulamasi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormUygulamasi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
