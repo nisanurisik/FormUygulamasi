@@ -2,6 +2,7 @@
 using FormUygulamasi.Models;
 using FormUygulamasi.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FormUygulamasi.Controllers
 {
@@ -19,17 +20,47 @@ namespace FormUygulamasi.Controllers
             return View();
         }
 
-        public IActionResult CariFormu()
+        public async Task<IActionResult> CariFormu()
         {
+            var iller = await _context.Iller.ToListAsync();
+
+            ViewData["iller"] = iller;
+
             return View();
         }
 
         [HttpPost]
-        public IActionResult Kaydet(CariViewModel cari)
+        public async Task<IActionResult> Kaydet(CariViewModel cari)
         {
             if (!ModelState.IsValid)
             {
+                var iller = await _context.Iller.ToListAsync();
+
+                ViewData["iller"] = iller;
+
+                if (cari.IlId.HasValue)
+                {
+                    var ilceler = await _context.Ilceler
+                        .Where(x => x.IlId == cari.IlId.Value)
+                        .ToListAsync();
+
+                    ViewData["ilceler"] = ilceler;
+                }
+
                 return View("CariFormu", cari);
+            }
+
+            var il = await _context.Iller
+                .FirstOrDefaultAsync(x => x.IlId == cari.IlId);
+
+            var ilce = await _context.Ilceler
+                .FirstOrDefaultAsync(x =>
+                    x.IlceId == cari.IlceId &&
+                    x.IlId == cari.IlId);
+
+            if (il == null || ilce == null)
+            {
+                return BadRequest();
             }
 
             var yeniCari = new Cari
@@ -40,20 +71,23 @@ namespace FormUygulamasi.Controllers
                 FirmaAdi = cari.FirmaAdi,
                 FirmaVKN = cari.FirmaVKN,
                 Kategori = cari.Kategori,
-                Il = cari.Il,
-                Ilce = cari.Ilce,
+
+                Il = il.IlAdi,
+                Ilce = ilce.IlceAdi,
+
                 Adres = cari.Adres
             };
 
             _context.Cariler.Add(yeniCari);
-            _context.SaveChanges();
+
+            await _context.SaveChangesAsync();
 
             return RedirectToAction("CariFormu");
         }
 
-        public IActionResult CariListele()
+        public async Task<IActionResult> CariListele()
         {
-            var cariler = _context.Cariler
+            var cariler = await _context.Cariler
                 .Select(x => new CariViewModel
                 {
                     Id = x.Id,
@@ -67,17 +101,45 @@ namespace FormUygulamasi.Controllers
                     Ilce = x.Ilce,
                     Adres = x.Adres
                 })
-                .ToList();
+                .ToListAsync();
 
             return View(cariler);
         }
 
-        public IActionResult CariGuncelle(int id)
+        public async Task<IActionResult> CariGuncelle(int id)
         {
-            var cari = _context.Cariler.Find(id);
+            var cari = await _context.Cariler.FindAsync(id);
 
             if (cari == null)
+            {
                 return NotFound();
+            }
+
+            var il = await _context.Iller
+                .FirstOrDefaultAsync(x => x.IlAdi == cari.Il);
+
+            Ilce? ilce = null;
+
+            if (il != null)
+            {
+                ilce = await _context.Ilceler
+                    .FirstOrDefaultAsync(x =>
+                        x.IlceAdi == cari.Ilce &&
+                        x.IlId == il.IlId);
+            }
+
+            var iller = await _context.Iller.ToListAsync();
+
+            ViewData["iller"] = iller;
+
+            if (il != null)
+            {
+                var ilceler = await _context.Ilceler
+                    .Where(x => x.IlId == il.IlId)
+                    .ToListAsync();
+
+                ViewData["ilceler"] = ilceler;
+            }
 
             var model = new CariViewModel
             {
@@ -88,8 +150,13 @@ namespace FormUygulamasi.Controllers
                 FirmaAdi = cari.FirmaAdi,
                 FirmaVKN = cari.FirmaVKN,
                 Kategori = cari.Kategori,
+
+                IlId = il?.IlId,
+                IlceId = ilce?.IlceId,
+
                 Il = cari.Il,
                 Ilce = cari.Ilce,
+
                 Adres = cari.Adres
             };
 
@@ -97,17 +164,46 @@ namespace FormUygulamasi.Controllers
         }
 
         [HttpPost]
-        public IActionResult CariGuncelle(CariViewModel cari)
+        public async Task<IActionResult> CariGuncelle(CariViewModel cari)
         {
             if (!ModelState.IsValid)
             {
+                var iller = await _context.Iller.ToListAsync();
+
+                ViewData["iller"] = iller;
+
+                if (cari.IlId.HasValue)
+                {
+                    var ilceler = await _context.Ilceler
+                        .Where(x => x.IlId == cari.IlId.Value)
+                        .ToListAsync();
+
+                    ViewData["ilceler"] = ilceler;
+                }
+
                 return View(cari);
             }
 
-            var guncellenecekCari = _context.Cariler.Find(cari.Id);
+            var guncellenecekCari =
+                await _context.Cariler.FindAsync(cari.Id);
 
             if (guncellenecekCari == null)
+            {
                 return NotFound();
+            }
+
+            var il = await _context.Iller
+                .FirstOrDefaultAsync(x => x.IlId == cari.IlId);
+
+            var ilce = await _context.Ilceler
+                .FirstOrDefaultAsync(x =>
+                    x.IlceId == cari.IlceId &&
+                    x.IlId == cari.IlId);
+
+            if (il == null || ilce == null)
+            {
+                return BadRequest();
+            }
 
             guncellenecekCari.CariAdi = cari.CariAdi;
             guncellenecekCari.CariSoyadi = cari.CariSoyadi;
@@ -115,13 +211,30 @@ namespace FormUygulamasi.Controllers
             guncellenecekCari.FirmaAdi = cari.FirmaAdi;
             guncellenecekCari.FirmaVKN = cari.FirmaVKN;
             guncellenecekCari.Kategori = cari.Kategori;
-            guncellenecekCari.Il = cari.Il;
-            guncellenecekCari.Ilce = cari.Ilce;
+
+            guncellenecekCari.Il = il.IlAdi;
+            guncellenecekCari.Ilce = ilce.IlceAdi;
+
             guncellenecekCari.Adres = cari.Adres;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return RedirectToAction("CariListele");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> IlceleriGetir(int ilId)
+        {
+            var ilceler = await _context.Ilceler
+                .Where(x => x.IlId == ilId)
+                .Select(x => new
+                {
+                    ilceId = x.IlceId,
+                    ilceAdi = x.IlceAdi
+                })
+                .ToListAsync();
+
+            return Json(ilceler);
         }
     }
 }

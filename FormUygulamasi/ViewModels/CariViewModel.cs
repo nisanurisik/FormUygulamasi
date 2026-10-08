@@ -11,7 +11,7 @@ namespace FormUygulamasi.ViewModels
         public string CariAdi { get; set; }
 
         [Required(ErrorMessage = "Cari soyadı girilmesi zorunludur.")]
-        [Display(Name = "Cari Soyadı")]         
+        [Display(Name = "Cari Soyadı")]
         public string CariSoyadi { get; set; }
 
         [Required(ErrorMessage = "Telefon numarası girilmesi zorunludur.")]
@@ -30,14 +30,19 @@ namespace FormUygulamasi.ViewModels
         [Display(Name = "Kategori")]
         public string Kategori { get; set; }
 
-        [Required(ErrorMessage = "İl girilmesi zorunludur.")]
+        [Required(ErrorMessage = "İl seçilmesi zorunludur.")]
         [Display(Name = "İl")]
-        public string Il { get; set; }
+        public int? IlId { get; set; }
 
+        [Required(ErrorMessage = "İlçe seçilmesi zorunludur.")]
         [Display(Name = "İlçe")]
-        public string? Ilce { get; set; }
+        public int? IlceId { get; set; }
 
         [Display(Name = "Adres")]
         public string? Adres { get; set; }
+
+        public string? Il { get; set; }
+
+        public string? Ilce { get; set; }
     }
 }

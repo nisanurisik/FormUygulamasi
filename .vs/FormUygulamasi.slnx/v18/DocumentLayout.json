@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\controllers\\caricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\controllers\\caricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|c:\\users\\nisanur\\desktop\\yaz\u0131l\u0131m dersleri\\formuygulamasi\\formuygulamasi\\views\\cari\\cariguncelle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{179606AD-7DA1-5E59-FF4D-0C1A203572F7}|FormUygulamasi\\FormUygulamasi.csproj|solutionrelative:formuygulamasi\\views\\cari\\cariguncelle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CariGuncelle.cshtml",
+              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\CariGuncelle.cshtml",
+              "RelativeDocumentMoniker": "FormUygulamasi\\Views\\Cari\\CariGuncelle.cshtml",
+              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Views\\Cari\\CariGuncelle.cshtml",
+              "RelativeToolTip": "FormUygulamasi\\Views\\Cari\\CariGuncelle.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAKoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-22T14:05:16.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CariController.cs",
+              "DocumentMoniker": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Controllers\\CariController.cs",
+              "RelativeDocumentMoniker": "FormUygulamasi\\Controllers\\CariController.cs",
+              "ToolTip": "C:\\Users\\nisanur\\Desktop\\Yaz\u0131l\u0131m Dersleri\\FormUygulamasi\\FormUygulamasi\\Controllers\\CariController.cs",
+              "RelativeToolTip": "FormUygulamasi\\Controllers\\CariController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAswH8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T12:13:12.905Z",
+              "EditorCaption": ""
             }
           ]
         }

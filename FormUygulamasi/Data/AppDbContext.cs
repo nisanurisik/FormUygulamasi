@@ -11,5 +11,7 @@ namespace FormUygulamasi.Data
 
         public DbSet<Cari> Cariler { get; set; }
         public DbSet<Stok> Stoklar { get; set; }
+        public DbSet<Il> Iller { get; set; }
+        public DbSet<Ilce> Ilceler { get; set; }
     }
 }

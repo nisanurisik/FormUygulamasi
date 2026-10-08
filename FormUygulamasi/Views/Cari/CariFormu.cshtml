@@ -1,6 +1,11 @@
-﻿@model FormUygulamasi.ViewModels.CariViewModel
+﻿@using FormUygulamasi.Models
+@model FormUygulamasi.ViewModels.CariViewModel
+
 @{
     ViewData["Title"] = "Cari Formu";
+
+    var iller = ViewData["iller"] as List<Il> ?? new List<Il>();
+    var ilceler = ViewData["ilceler"] as List<Ilce> ?? new List<Ilce>();
 }
 <h1 class="text-center form-title mb-3">Cari Kayıt Formu</h1>
 <div class="form-divider mx-auto mb-4"></div>
@@ -85,30 +90,37 @@
     <div class="mb-3">
         <div class="row">
                     <div class="col">
-                        <label asp-for="Il" class="form-label">İl</label>
+                        <label asp-for="IlId" class="form-label">İl</label>
                         <div class="input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-geo-alt"></i>
                             </span>
-                            <select asp-for="Il" class="form-select">
+                            <select asp-for="IlId" id="ilSelect" class="form-select">
                                 <option value="">İl Seçiniz</option>
-                                <option>Samsun</option>
-                                <option>İstanbul</option>
-                                <option>Hatay</option>
+                                @foreach (var il in iller)
+                                {
+                                    <option value="@il.IlId">@il.IlAdi</option>
+                                }
                             </select>
                         </div>
-                        <span asp-validation-for="Il" class="text-danger"></span>
+                        <span asp-validation-for="IlId" class="text-danger"></span>
                     </div>
 
                     <div class="col">
-                        <label asp-for="Ilce" class="form-label">İlçe</label>
+                        <label asp-for="IlceId" class="form-label">İlçe</label>
                         <div class="input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-pin-map"></i>
                             </span>
-                            <input asp-for="Ilce" class="form-control" placeholder="İlçe giriniz."/>
+                            <select asp-for="IlceId" id="ilceSelect" class="form-select">
+                                <option value="">İlçe Seçiniz</option>  
+                                @foreach (var ilce in ilceler)
+                                {
+                                    <option value="@ilce.IlceId">@ilce.IlceAdi</option>
+                                }
+                            </select>
                         </div>
-                        <span asp-validation-for="Ilce" class="text-danger"></span>
+                        <span asp-validation-for="IlceId" class="text-danger"></span>
                     </div>
         </div>
     </div>
@@ -133,12 +145,45 @@
         
 </form>
 
-@section Scripts
-{
-        @{
+        @section Scripts
+        {
+            @{
                 await Html.RenderPartialAsync("_ValidationScriptsPartial");
             }
-}
 
+            <script>
+                        const ilSelect = document.getElementById("ilSelect");
+                        const ilceSelect = document.getElementById("ilceSelect");
+
+                        ilSelect.addEventListener("change", function() {
+
+                            const ilId = this.value;
+
+                            ilceSelect.innerHTML =
+                                '<option value="">İlçe Seçiniz</option>';
+
+                            if (ilId === "") {
+                                return;
+                            }
+
+                            fetch('/Cari/IlceleriGetir?ilId=' + ilId)
+                                .then(response => response.json())
+                                .then(data => {
+
+                                    data.forEach(function(ilce) {
+
+                                        const option =
+                                            document.createElement("option");
+
+                                        option.value = ilce.ilceId;
+                                        option.textContent = ilce.ilceAdi;
+
+                                        ilceSelect.appendChild(option);
+                                    });
+
+                                });
+                        });
+            </script>
+        }
     </div>
 </div>
